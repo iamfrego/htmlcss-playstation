@@ -8,6 +8,7 @@
     --color_brand_darker: #161C3B;
     --color_brand: #2d64e6;
     --color_secondary: #CD3D0F;
+    --color_footer: #00439c;
 }
 
 body {
@@ -139,6 +140,24 @@ body {
 
 .social col {
     margin: 0;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--color_footer);
+}
+
+.region_logo {
+    height: 16px;
+}
+
+.region_text, .copyright_text {
+    font-size: small;
+}
+
+.copyright img {
+    width: 100px;
 }
 
 @media screen and (max-width:880px) {
