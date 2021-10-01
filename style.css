@@ -94,3 +94,9 @@ body {
 .new_game {
     background-color: var(--color_dark_80);
 }
+
+/* ps4_presentation */
+
+.ps4_presentation .card {
+    border: 0;
+}
