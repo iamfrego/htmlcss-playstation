@@ -1,3 +1,14 @@
+:root {
+    --color_dark_100: #000;
+    --color_dark_80: #1F1F1F;
+    --color_dark_60: #363636;
+    --color_dark_40: #BEBCBB;
+    --color_dark_20: #D9DADC;
+    --color_brand_darker: #161C3B;
+    --color_brand: #0070D1;
+    --color_secondary: #CD3D0F;
+}
+
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
@@ -9,14 +20,14 @@ body {
     width: 100px;
 }
 
+.accedi {
+    background-color: var(--color_dark_60);
+}
+
 /* Main */
 
-/* .position-absolute {
-    bottom: 10%;
-    left: 5%
-} */
-
 .jumbo {
+    margin-top: 7rem;
     background-image: url(./img/jumbo-bg.png);
     background-position: center;
     width: 100%;
@@ -29,7 +40,7 @@ body {
 }
 
 .btn-danger {
-    background-color: #cd3d0f;
+    background-color: var(--color_secondary);
 }
 
 .rounded_jumbo_selector {
