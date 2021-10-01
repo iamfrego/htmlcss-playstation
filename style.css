@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -10,10 +11,10 @@ body {
 
 /* Main */
 
-.position-absolute {
+/* .position-absolute {
     bottom: 10%;
     left: 5%
-}
+} */
 
 .descrption_text p {
     width: 45%;
@@ -21,4 +22,8 @@ body {
 
 .btn-danger {
     background-color: #cd3d0f;
+}
+
+.rounded_jumbo_selector {
+    border-radius: 25px;
 }
