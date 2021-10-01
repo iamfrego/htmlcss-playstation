@@ -135,6 +135,12 @@ body {
     height: 400px;
 }
 
+/* social */
+
+.social col {
+    margin: 0;
+}
+
 @media screen and (max-width:880px) {
     .devices .col p, .playstation_plus .april_psPlus, .playstation_now .april_psNow {
         display: none;
