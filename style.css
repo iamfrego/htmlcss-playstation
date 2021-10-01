@@ -2,6 +2,7 @@
     --color_dark_100: #000;
     --color_dark_80: #1F1F1F;
     --color_dark_60: #363636;
+    --color_dark_50: #737373;
     --color_dark_40: #BEBCBB;
     --color_dark_20: #D9DADC;
     --color_brand_darker: #161C3B;
@@ -60,11 +61,6 @@ body {
     background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
 }
 
-.ps_plus {
-    background-color: var(--color_dark_40);
-    height: 400px;
-}
-
 /* jumbo text */
 
 .description {
@@ -94,7 +90,7 @@ body {
 }
 
 .ps5_presentation p {
-    color: var(--color_dark_40);
+    color: var(--color_dark_50);
 }
 
 /* devices */
@@ -111,12 +107,36 @@ body {
 
 /* ps4_presentation */
 
+.ps4_presentation p {
+    color: var(--color_dark_50);
+}
+
 .ps4_presentation .card {
     border: 0;
 }
 
-@media screen and (max-width:768px) {
-    .devices .col p, .playstation_plus .april_psPlus {
+/* ps_plus */
+
+.ps_plus {
+    background-color: var(--color_dark_40);
+    height: 400px;
+}
+
+/* ps_store */
+
+.ps_store p {
+    color: var(--color_dark_50);
+}
+
+/* ps_now */
+
+.ps_now {
+    background-color: var(--color_brand_darker);
+    height: 400px;
+}
+
+@media screen and (max-width:880px) {
+    .devices .col p, .playstation_plus .april_psPlus, .playstation_now .april_psNow {
         display: none;
     }
     .ps_plus {
