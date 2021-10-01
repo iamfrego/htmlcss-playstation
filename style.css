@@ -75,3 +75,9 @@ body {
 .ps5_presentation p {
     color: var(--color_dark_40);
 }
+
+/* devices */
+
+.first_devices {
+    border-bottom: var(--color_brand) 2px solid;
+}
