@@ -5,13 +5,21 @@
     --color_dark_40: #BEBCBB;
     --color_dark_20: #D9DADC;
     --color_brand_darker: #161C3B;
-    --color_brand: #0070D1;
+    --color_brand: #2d64e6;
     --color_secondary: #CD3D0F;
 }
 
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+}
+
+.btn_red {
+    background-color: var(--color_secondary);
+}
+
+.btn_blue {
+    background-color: var(--color_brand);
 }
 
 /* Header */
@@ -26,6 +34,8 @@ body {
 
 /* Main */
 
+/* jumbo */
+
 .jumbo {
     margin-top: 7rem;
     background-image: url(./img/jumbo-bg.png);
@@ -34,15 +44,34 @@ body {
     height: 650px;
 }
 
+/* jumbo text */
+
 .description {
     margin-left: 5%;
     margin-top: 15%;
 }
 
-.btn-danger {
-    background-color: var(--color_secondary);
+/* jumbo selector */
+
+.jumbo_selector {
+    margin-bottom: 6rem;
 }
 
 .rounded_jumbo_selector {
     border-radius: 25px;
+}
+
+.jumbo_first_option {
+    padding: 5px;
+    border: var(--color_brand) solid 2px;
+}
+
+/* ps5 presentation */
+
+.ps5_presentation h6 {
+    color: var(--color_brand);
+}
+
+.ps5_presentation p {
+    color: var(--color_dark_40);
 }
