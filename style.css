@@ -16,8 +16,16 @@ body {
     left: 5%
 } */
 
-.descrption_text p {
-    width: 45%;
+.jumbo {
+    background-image: url(./img/jumbo-bg.png);
+    background-position: center;
+    width: 100%;
+    height: 650px;
+}
+
+.description {
+    margin-left: 5%;
+    margin-top: 15%;
 }
 
 .btn-danger {
