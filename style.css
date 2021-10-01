@@ -14,12 +14,21 @@ body {
     overflow-x: hidden;
 }
 
+.btn {
+    font-weight: bold;
+}
+
 .btn_red {
     background-color: var(--color_secondary);
 }
 
 .btn_blue {
     background-color: var(--color_brand);
+}
+
+.btn_reverse {
+    background-color: var(--color_dark_20);
+    color: var(--color_brand);
 }
 
 /* Header */
@@ -49,6 +58,11 @@ body {
 
 .it_takes_two {
     background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.ps_plus {
+    background-color: var(--color_dark_40);
+    height: 400px;
 }
 
 /* jumbo text */
@@ -99,4 +113,13 @@ body {
 
 .ps4_presentation .card {
     border: 0;
+}
+
+@media screen and (max-width:768px) {
+    .devices .col p, .playstation_plus .april_psPlus {
+        display: none;
+    }
+    .ps_plus {
+        height: 300px;
+    }
 }
