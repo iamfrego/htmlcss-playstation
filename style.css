@@ -1,5 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
 /* Header */
 
 .sony img {
     width: 100px;
+}
+
+/* Main */
+
+.position-absolute {
+    bottom: 10%;
+    left: 5%
+}
+
+.descrption_text p {
+    width: 45%;
+}
+
+.btn-danger {
+    background-color: #cd3d0f;
 }
