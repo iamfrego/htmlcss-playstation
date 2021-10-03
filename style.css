@@ -30,17 +30,33 @@ body {
 
 .btn_reverse {
     background-color: var(--color_dark_20);
-    color: var(--color_brand);
+    color: var(--color_brand) !important;
+}
+
+.btn_gray {
+    background-color: var(--color_dark_60);
+}
+
+.b_gray {
+    border: 2px solid var(--color_dark_60);
+}
+
+.b_red {
+    border: 2px solid var(--color_secondary);
+}
+
+.b_blue {
+    border: 2px solid var(--color_brand);
+}
+
+.b_reverse {
+    border: 3px solid var(--color_dark_20);
 }
 
 /* Header */
 
 .sony img {
     width: 100px;
-}
-
-.accedi {
-    background-color: var(--color_dark_60);
 }
 
 /* Main */
@@ -159,6 +175,19 @@ footer {
 .copyright img {
     width: 100px;
 }
+
+/* Animation */
+
+.color_border:hover {
+    margin-left: -0.25rem;
+    margin-right: -0.1rem;
+}
+
+.btn:hover {
+    border: 2px solid white;
+}
+
+/* MediaQuery */
 
 @media screen and (max-width:880px) {
     .devices .col p, .playstation_plus .april_psPlus, .playstation_now .april_psNow {
