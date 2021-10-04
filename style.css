@@ -5,8 +5,8 @@
     --color_dark_50: #737373;
     --color_dark_40: #BEBCBB;
     --color_dark_20: #D9DADC;
-    --color_brand_darker: #161C3B;
-    --color_brand: #2d64e6;
+    --color_main_darker: #161C3B;
+    --color_main: #2d64e6;
     --color_secondary: #CD3D0F;
     --color_footer: #00439c;
 }
@@ -27,12 +27,12 @@ body {
 }
 
 .btn_blue {
-    background-color: var(--color_brand);
+    background-color: var(--color_main);
 }
 
 .btn_reverse {
     background-color: var(--color_dark_20);
-    color: var(--color_brand) !important;
+    color: var(--color_main) !important;
 }
 
 .btn_gray {
@@ -48,7 +48,7 @@ body {
 }
 
 .b_blue {
-    border: 2px solid var(--color_brand);
+    border: 2px solid var(--color_main);
 }
 
 .b_reverse {
@@ -63,6 +63,39 @@ body {
 
 .nav_button {
     height: 45px;
+}
+
+.dropdown_icon::after {
+    content: "";
+    background-image: url(../img/chevron-down-solid.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: .255em;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0;
+}
+
+.dropdown-item {
+    color: var(--color_darkest);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: inherit;
+    background-color: inherit;
+    box-shadow: 0px 0px 6px 3px var(--color_dark_20);
 }
 
 /* Main */
@@ -107,13 +140,13 @@ body {
 
 .jumbo_first_option {
     padding: 5px;
-    border: var(--color_brand) solid 2px;
+    border: var(--color_main) solid 2px;
 }
 
 /* ps5 presentation */
 
 .ps5_presentation h6 {
-    color: var(--color_brand);
+    color: var(--color_main);
 }
 
 .ps5_presentation p {
@@ -127,7 +160,7 @@ body {
 /* devices */
 
 .first_devices {
-    border-bottom: var(--color_brand) 2px solid;
+    border-bottom: var(--color_main) 2px solid;
 }
 
 /* new_game */
@@ -166,7 +199,7 @@ body {
 /* ps_now */
 
 .ps_now {
-    background-color: var(--color_brand_darker);
+    background-color: var(--color_main_darker);
     height: 400px;
 }
 
@@ -196,9 +229,24 @@ footer {
 
 /* Animation */
 
+.nav-link:hover {
+    color: var(--color_main) !important;
+}
+
+.nav-link:active.dropdown_icon::after {
+    background-image: url(../img/chevron-down-solid-hover.svg);
+    transform: rotate(180deg);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: inherit;
+    background-color: inherit;
+    box-shadow: 0px 0px 6px 3px var(--color_dark_20);
+}
+
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     font-weight: normal;
-    color: var(--color_brand);
+    color: var(--color_main);
 }
 
 .color_border:hover {
