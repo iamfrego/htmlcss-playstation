@@ -16,6 +16,8 @@ body {
     overflow-x: hidden;
 }
 
+/* btn */
+
 .btn {
     font-weight: bold;
 }
@@ -59,6 +61,10 @@ body {
     width: 100px;
 }
 
+.nav_button {
+    height: 45px;
+}
+
 /* Main */
 
 /* jumbo */
@@ -83,6 +89,10 @@ body {
 .description {
     margin-left: 5%;
     margin-top: 15%;
+}
+
+.descrption_text {
+    height: 300px;
 }
 
 /* jumbo selector */
@@ -110,6 +120,10 @@ body {
     color: var(--color_dark_50);
 }
 
+.ps5_description {
+    height: 180px;
+}
+
 /* devices */
 
 .first_devices {
@@ -126,6 +140,10 @@ body {
 
 .ps4_presentation p {
     color: var(--color_dark_50);
+}
+
+.card {
+    height: 415px;
 }
 
 .ps4_presentation .card {
@@ -195,7 +213,7 @@ footer {
 .pointer:hover {
     cursor: pointer;
     position: relative;
-    bottom: 2rem;
+    bottom: 1rem;
 }
 
 /* MediaQuery */
@@ -206,5 +224,7 @@ footer {
     }
     .ps_plus {
         height: 300px;
+        position: relative;
+        bottom: 2rem;
     }
 }
